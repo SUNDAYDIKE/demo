@@ -1,0 +1,42 @@
+body{
+    background-image: url("paper_00029.jpg")
+
+}
+#def_button{
+    background-color: rgb(172, 224, 191);
+  }
+
+@media screen and (max-width: 640px){
+    .moneyButtons{
+        margin: 0 auto;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+}
+
+
+@media screen and (min-width: 640px){
+    .moneyButtons{
+        margin: 0 auto;
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .recordButtons{
+        margin: 0 auto;
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    
+    .inputs{
+        margin: 0 auto;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
