@@ -7,6 +7,11 @@ const cacheAssets = [
     'paper_00029.jpg'
 ];
 
+self.addEventListener('fetch', function(event) {
+
+});
+
+
 console.log(self+"その1");
 self.addEventListener('install', async(ev) =>{
     console.log("SW: install eventが発火");
