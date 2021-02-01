@@ -19,6 +19,7 @@ self.addEventListener('install', async(ev) =>{
     ev.waitUntil((async () =>{
         const cache = await caches.open(cacheName);
         cache.addAll(cacheAssets);
+        console.log(self+"その3");
         return self.skipWaiting();
     })());
 });
