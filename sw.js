@@ -7,8 +7,10 @@ const cacheAssets = [
     'paper_00029.jpg'
 ];
 
+console.log(self+"その1");
 self.addEventListener('install', async(ev) =>{
     console.log("SW: install eventが発火");
+    console.log(self+"その2");
     ev.waitUntil((async () =>{
         const cache = await caches.open(cacheName);
         cache.addAll(cacheAssets);
@@ -24,7 +26,7 @@ self.addEventListener('activate', async(ev) =>{
         console.log(keys);
         const targets = keys.filter(key => key !== cacheName);
         console.log(targets);
-        return Promise.all(targets.map(target => CacheStorage.delrte(target)));
+        return Promise.all(targets.map(target => CacheStorage.delete(target)));
     })());
 
 });
