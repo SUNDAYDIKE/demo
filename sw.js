@@ -1,7 +1,7 @@
 const cacheName = 'v3';
 
 const cacheAssets = [
-    'Index.html',
+    'index.html',
     'style.css',
     'index.js',
     'paper_00029.jpg'
